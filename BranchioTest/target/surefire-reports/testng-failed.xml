@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Regression-1_testingHomePage]">
+  <parameter name="GoogleURL" value="https://www.google.com/"/>
+  <parameter name="HOMEPageURL" value="https://branch.io/"/>
+  <parameter name="Browser" value="ch"/>
+  <test name="TC004_ch (failed)">
+    <parameter name="GoogleURL" value="https://www.google.com/"/>
+    <parameter name="HOMEPageURL" value="https://branch.io/"/>
+    <parameter name="Browser" value="ch"/>
+    <classes>
+      <class name="BranchIO.com.HomePageTest">
+        <methods>
+          <include name="varifyEmployeeList"/>
+          <include name="launchBrowser"/>
+          <include name="teardown"/>
+          <include name="validateNumberOfEmployee"/>
+          <include name="setupEn"/>
+        </methods>
+      </class> <!-- BranchIO.com.HomePageTest -->
+    </classes>
+  </test> <!-- TC004_ch (failed) -->
+</suite> <!-- Failed suite [Regression-1_testingHomePage] -->

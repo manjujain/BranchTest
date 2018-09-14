@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="34.771" tests="6" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.181-b13"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/manjujain/Documents/workspace/BranchioTest"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/manjujain/Documents/workspace/BranchioTest"/>
+    <property name="java.runtime.version" value="1.8.0_181-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="basedir" value="/Users/manjujain/Documents/workspace/BranchioTest"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/h_/206twp496bvgzyw1_hmkf6cr0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/manjujain/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf6660031951607718705.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/manjujain/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="surefire.test.class.path" value="/Users/manjujain/Documents/workspace/BranchioTest/target/test-classes:/Users/manjujain/Documents/workspace/BranchioTest/target/classes:/Users/manjujain/.m2/repository/org/seleniumhq/selenium/selenium-server/2.44.0/selenium-server-2.44.0.jar:/Users/manjujain/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar:/Users/manjujain/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar:/Users/manjujain/.m2/repository/mx4j/mx4j-tools/3.0.1/mx4j-tools-3.0.1.jar:/Users/manjujain/.m2/repository/org/mortbay/jetty/servlet-api-2.5/6.1.9/servlet-api-2.5-6.1.9.jar:/Users/manjujain/.m2/repository/org/seleniumhq/selenium/jetty-repacked/7.6.1/jetty-repacked-7.6.1.jar:/Users/manjujain/.m2/repository/org/seleniumhq/selenium/jetty-rc-repacked/5/jetty-rc-repacked-5.jar:/Users/manjujain/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/manjujain/.m2/repository/org/seleniumhq/selenium/selenium-java/2.44.0/selenium-java-2.44.0.jar:/Users/manjujain/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.44.0/selenium-chrome-driver-2.44.0.jar:/Users/manjujain/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.44.0/selenium-remote-driver-2.44.0.jar:/Users/manjujain/.m2/repository/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar:/Users/manjujain/.m2/repository/org/seleniumhq/selenium/selenium-api/2.44.0/selenium-api-2.44.0.jar:/Users/manjujain/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar:/Users/manjujain/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.44.0/selenium-htmlunit-driver-2.44.0.jar:/Users/manjujain/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.15/htmlunit-2.15.jar:/Users/manjujain/.m2/repository/xalan/xalan/2.7.1/xalan-2.7.1.jar:/Users/manjujain/.m2/repository/xalan/serializer/2.7.1/serializer-2.7.1.jar:/Users/manjujain/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/manjujain/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.15/htmlunit-core-js-2.15.jar:/Users/manjujain/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/manjujain/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/manjujain/.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.21/nekohtml-1.9.21.jar:/Users/manjujain/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.14/cssparser-0.9.14.jar:/Users/manjujain/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/Users/manjujain/.m2/repository/org/eclipse/jetty/jetty-websocket/8.1.15.v20140411/jetty-websocket-8.1.15.v20140411.jar:/Users/manjujain/.m2/repository/org/eclipse/jetty/jetty-util/8.1.15.v20140411/jetty-util-8.1.15.v20140411.jar:/Users/manjujain/.m2/repository/org/eclipse/jetty/jetty-io/8.1.15.v20140411/jetty-io-8.1.15.v20140411.jar:/Users/manjujain/.m2/repository/org/eclipse/jetty/jetty-http/8.1.15.v20140411/jetty-http-8.1.15.v20140411.jar:/Users/manjujain/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.44.0/selenium-firefox-driver-2.44.0.jar:/Users/manjujain/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/manjujain/.m2/repository/org/apache/commons/commons-exec/1.1/commons-exec-1.1.jar:/Users/manjujain/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.44.0/selenium-ie-driver-2.44.0.jar:/Users/manjujain/.m2/repository/net/java/dev/jna/jna/3.4.0/jna-3.4.0.jar:/Users/manjujain/.m2/repository/net/java/dev/jna/platform/3.4.0/platform-3.4.0.jar:/Users/manjujain/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.44.0/selenium-safari-driver-2.44.0.jar:/Users/manjujain/.m2/repository/org/seleniumhq/selenium/selenium-support/2.44.0/selenium-support-2.44.0.jar:/Users/manjujain/.m2/repository/org/webbitserver/webbit/0.4.14/webbit-0.4.14.jar:/Users/manjujain/.m2/repository/io/netty/netty/3.5.2.Final/netty-3.5.2.Final.jar:/Users/manjujain/.m2/repository/org/yaml/snakeyaml/1.8/snakeyaml-1.8.jar:/Users/manjujain/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/manjujain/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/Users/manjujain/.m2/repository/com/google/code/gson/gson/2.6.2/gson-2.6.2.jar:/Users/manjujain/.m2/repository/com/jayway/restassured/rest-assured/2.9.0/rest-assured-2.9.0.jar:/Users/manjujain/.m2/repository/org/codehaus/groovy/groovy/2.4.4/groovy-2.4.4.jar:/Users/manjujain/.m2/repository/org/codehaus/groovy/groovy-xml/2.4.4/groovy-xml-2.4.4.jar:/Users/manjujain/.m2/repository/org/apache/httpcomponents/httpclient/4.5.1/httpclient-4.5.1.jar:/Users/manjujain/.m2/repository/org/apache/httpcomponents/httpcore/4.4.3/httpcore-4.4.3.jar:/Users/manjujain/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/manjujain/.m2/repository/org/apache/httpcomponents/httpmime/4.5.1/httpmime-4.5.1.jar:/Users/manjujain/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/manjujain/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/Users/manjujain/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/manjujain/.m2/repository/com/jayway/restassured/json-path/2.9.0/json-path-2.9.0.jar:/Users/manjujain/.m2/repository/org/codehaus/groovy/groovy-json/2.4.4/groovy-json-2.4.4.jar:/Users/manjujain/.m2/repository/com/jayway/restassured/rest-assured-common/2.9.0/rest-assured-common-2.9.0.jar:/Users/manjujain/.m2/repository/com/jayway/restassured/xml-path/2.9.0/xml-path-2.9.0.jar:/Users/manjujain/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/Users/manjujain/.m2/repository/io/rest-assured/rest-assured/3.0.2/rest-assured-3.0.2.jar:/Users/manjujain/.m2/repository/io/rest-assured/json-path/3.0.2/json-path-3.0.2.jar:/Users/manjujain/.m2/repository/io/rest-assured/rest-assured-common/3.0.2/rest-assured-common-3.0.2.jar:/Users/manjujain/.m2/repository/io/rest-assured/xml-path/3.0.2/xml-path-3.0.2.jar:/Users/manjujain/.m2/repository/org/testng/testng/6.8.5/testng-6.8.5.jar:/Users/manjujain/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/manjujain/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/manjujain/.m2/repository/com/beust/jcommander/1.27/jcommander-1.27.jar:/Users/manjujain/.m2/repository/org/apache/maven/surefire/surefire-testng-utils/2.18.1/surefire-testng-utils-2.18.1.jar:/Users/manjujain/.m2/repository/org/apache/maven/surefire/surefire-grouper/2.18.1/surefire-grouper-2.18.1.jar:"/>
+    <property name="sun.awt.enableExtraMouseButtons" value="true"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.13.4"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/manjujain"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="manjujain"/>
+    <property name="java.class.path" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_181"/>
+    <property name="java.ext.dirs" value="/Users/manjujain/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/classes"/>
+    <property name="webdriver.chrome.driver" value="/Users/manjujain/Downloads/RestAssured/src/resource/chromedriver"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/manjujain/Documents/workspace/BranchioTest/EMBEDDED"/>
+    <property name="localRepository" value="/Users/manjujain/.m2/repository"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.font.fontmanager" value="sun.font.CFontManager"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="launchHomePage" classname="BranchIO.com.HomePageTest" time="1.518"/>
+  <testcase name="HomePage_team" classname="BranchIO.com.HomePageTest" time="5.559"/>
+  <testcase name="varifyEmployeeList" classname="BranchIO.com.HomePageTest" time="13.14">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at BranchIO.com.HomePageTest.varifyEmployeeList(HomePageTest.java:183)
+</failure>
+    <system-out><![CDATA[Engineer Employee:  *******
+Not Found: EVGENIY (GENE) HAYDAMAKHA
+Not Found: HEMANTH SRIDHARA ASHALATHA
+Not Found: MICHAEL NORDBERG
+Not Found: RUTH M. PARDEE
+Data Employee:  *******
+Not Found: KAN YU
+Product Employee:  *******
+PartnerGrowth Employee :  *******
+Not Found: ADAM MICHALSKI
+Not Found: JARED BEN-JAMIN
+Not Found: PATRICK VAN DER STEEN
+Marketing Employee:  *******
+Not Found: EVGENIY (GENE) HAYDAMAKHA
+Not Found: HEMANTH SRIDHARA ASHALATHA
+Not Found: MICHAEL NORDBERG
+Not Found: RUTH M. PARDEE
+]]></system-out>
+  </testcase>
+  <testcase name="validateNumberOfEmployee" classname="BranchIO.com.HomePageTest" time="0.114">
+    <failure message="expected [124] but found [120]" type="java.lang.AssertionError">java.lang.AssertionError: expected [124] but found [120]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at BranchIO.com.HomePageTest.validateNumberOfEmployee(HomePageTest.java:221)
+</failure>
+    <system-out><![CDATA[**************Total count of employee: 124
+**************Totla count of each Department: 120
+]]></system-out>
+  </testcase>
+  <testcase name="navigateHomePageWithGoogle" classname="BranchIO.com.HomePageTest" time="13.361"/>
+  <testcase name="openNewtab" classname="BranchIO.com.HomePageTest" time="1.079"/>
+</testsuite>
