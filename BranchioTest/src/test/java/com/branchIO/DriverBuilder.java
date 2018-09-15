@@ -15,8 +15,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class DriverBuilder {
 	static WebDriver driver;
      static FileInputStream fis;
-   ///Users/manjujain/GitFolder/BranchioTest/src/test/java/resource/chromedriver
-     static String Chromerdrpath=System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchioTest"+File.separator+"src"+File.separator+"test"+File.separator+"java"+File.separator+"resource"+File.separator+"chromedriver";
+   
+     static String chromeDrPath=System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchioTest"+File.separator+"src"+File.separator+"test"+File.separator+"java"+File.separator+"resource"+File.separator+"chromedriver";
 	  static String Firefoxdrpath = System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchioTest"+File.separator+"src"+File.separator+"test"+File.separator+"java"+File.separator+"resource"+File.separator+"gecko.driver";
 	  
 	  static String IEdrpath =  System.getProperty("user.home")+"/GitFolder/BranchTestProject/src/resource/iedriver";
@@ -40,7 +40,7 @@ public class DriverBuilder {
 		}
 
 		else if (br == "ch") {
-			File file = new File(Chromerdrpath);
+			File file = new File(chromeDrPath);
 			System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 			
 			driver = new ChromeDriver();
