@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression-1_testingHomePage]">
+  <test thread-count="5" name="TC004_ch (failed)">
+    <parameter name="GoogleURL" value="https://www.google.com/"/>
+    <parameter name="HOMEPageURL" value="https://branch.io/"/>
+    <parameter name="Browser" value="ch"/>
+    <classes>
+      <class name="com.branchIO.HomePageTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="setupEn"/>
+          <include name="validateNumberOfEmployee"/>
+          <include name="varifyEmployeeList"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.branchIO.HomePageTest -->
+    </classes>
+  </test> <!-- TC004_ch (failed) -->
+</suite> <!-- Failed suite [Regression-1_testingHomePage] -->

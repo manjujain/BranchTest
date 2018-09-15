@@ -113,6 +113,7 @@ public class HomePageTest extends Base{
 			String xpath_catagary=getProp("Employee_catagory_xpathPart1")+n+getProp("Employee_catagory_xpathPart2");
 			 
 			WebElement ele_name = driver.findElement(By.xpath(xpath_employeeName));
+			
 			WebElement ele_catagory = driver.findElement(By.xpath(xpath_catagary));
 			
 			
