@@ -1,5 +1,5 @@
 
-package BranchIO.com;
+package com.branchIO;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -15,10 +15,9 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class DriverBuilder {
 	static WebDriver driver;
      static FileInputStream fis;
-   
-     static String Chromerdrpath="/Users/manjujain/Downloads/RestAssured/src/resource/chromedriver";
-     
-	  static String Firefoxdrpath = System.getProperty("user.home")+File.separator+"Downloads"+File.separator+"src"+File.separator+"resource"+File.separator+"gecko.driver";
+   ///Users/manjujain/GitFolder/BranchioTest/src/test/java/resource/chromedriver
+     static String Chromerdrpath=System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchioTest"+File.separator+"src"+File.separator+"test"+File.separator+"java"+File.separator+"resource"+File.separator+"chromedriver";
+	  static String Firefoxdrpath = System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchioTest"+File.separator+"src"+File.separator+"test"+File.separator+"java"+File.separator+"resource"+File.separator+"gecko.driver";
 	  
 	  static String IEdrpath =  System.getProperty("user.home")+"/GitFolder/BranchTestProject/src/resource/iedriver";
 	

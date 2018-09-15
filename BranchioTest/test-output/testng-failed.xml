@@ -6,19 +6,15 @@
     <parameter name="HOMEPageURL" value="https://branch.io/"/>
     <parameter name="Browser" value="ch"/>
     <classes>
-      <class name="BranchIO.com.HomePageTest">
+      <class name="com.branchIO.HomePageTest">
         <methods>
-          <include name="navigateHomePageWithGoogle"/>
-          <include name="varifyEmployeeList"/>
-          <include name="launchHomePage"/>
           <include name="launchBrowser"/>
-          <include name="HomePage_team"/>
-          <include name="teardown"/>
-          <include name="openNewtab"/>
-          <include name="validateNumberOfEmployee"/>
           <include name="setupEn"/>
+          <include name="validateNumberOfEmployee"/>
+          <include name="varifyEmployeeList"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- BranchIO.com.HomePageTest -->
+      </class> <!-- com.branchIO.HomePageTest -->
     </classes>
   </test> <!-- TC004_ch (failed) -->
 </suite> <!-- Failed suite [Regression-1_testingHomePage] -->

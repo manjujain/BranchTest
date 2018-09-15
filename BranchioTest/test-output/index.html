@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Regression-1_testingHomePage">
-              <span class="suite-name border-skipped">Regression-1_testingHomePage</span>
+              <span class="suite-name border-failed">Regression-1_testingHomePage</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,46 +91,55 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,  6 skipped,  </span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Regression-1_testingHomePage" class="hide-methods skipped suite-Regression-1_testingHomePage"> (hide)</a> <!-- hide-methods skipped suite-Regression-1_testingHomePage -->
-                      <a href="#" panel-name="suite-Regression-1_testingHomePage" class="show-methods skipped suite-Regression-1_testingHomePage"> (show)</a> <!-- show-methods skipped suite-Regression-1_testingHomePage -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Regression-1_testingHomePage" class="hide-methods failed suite-Regression-1_testingHomePage"> (hide)</a> <!-- hide-methods failed suite-Regression-1_testingHomePage -->
+                      <a href="#" panel-name="suite-Regression-1_testingHomePage" class="show-methods failed suite-Regression-1_testingHomePage"> (show)</a> <!-- show-methods failed suite-Regression-1_testingHomePage -->
                     </span>
-                    <div class="method-list-content skipped suite-Regression-1_testingHomePage">
+                    <div class="method-list-content failed suite-Regression-1_testingHomePage">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression-1_testingHomePage" title="BranchIO.com.HomePageTest" hash-for-method="HomePage_team">HomePage_team</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression-1_testingHomePage" title="com.branchIO.HomePageTest" hash-for-method="validateNumberOfEmployee">validateNumberOfEmployee</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression-1_testingHomePage" title="BranchIO.com.HomePageTest" hash-for-method="launchHomePage">launchHomePage</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression-1_testingHomePage" title="com.branchIO.HomePageTest" hash-for-method="varifyEmployeeList">varifyEmployeeList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Regression-1_testingHomePage -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Regression-1_testingHomePage" class="hide-methods passed suite-Regression-1_testingHomePage"> (hide)</a> <!-- hide-methods passed suite-Regression-1_testingHomePage -->
+                      <a href="#" panel-name="suite-Regression-1_testingHomePage" class="show-methods passed suite-Regression-1_testingHomePage"> (show)</a> <!-- show-methods passed suite-Regression-1_testingHomePage -->
+                    </span>
+                    <div class="method-list-content passed suite-Regression-1_testingHomePage">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression-1_testingHomePage" title="com.branchIO.HomePageTest" hash-for-method="HomePage_team">HomePage_team</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression-1_testingHomePage" title="BranchIO.com.HomePageTest" hash-for-method="navigateHomePageWithGoogle">navigateHomePageWithGoogle</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression-1_testingHomePage" title="com.branchIO.HomePageTest" hash-for-method="launchHomePage(https://branch.io/)">launchHomePage(https://branch.io/)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression-1_testingHomePage" title="BranchIO.com.HomePageTest" hash-for-method="openNewtab">openNewtab</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression-1_testingHomePage" title="com.branchIO.HomePageTest" hash-for-method="navigateHomePageWithGoogle(https://www.google.com/)">navigateHomePageWithGoogle(https://www.google.com/)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression-1_testingHomePage" title="BranchIO.com.HomePageTest" hash-for-method="validateNumberOfEmployee">validateNumberOfEmployee</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression-1_testingHomePage" title="com.branchIO.HomePageTest" hash-for-method="openNewtab(https://branch.io/)">openNewtab(https://branch.io/)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression-1_testingHomePage" title="BranchIO.com.HomePageTest" hash-for-method="varifyEmployeeList">varifyEmployeeList</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Regression-1_testingHomePage -->
+                    </div> <!-- method-list-content passed suite-Regression-1_testingHomePage -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -142,79 +151,20 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Regression-1_testingHomePage" class="panel Regression-1_testingHomePage">
-          <div class="suite-Regression-1_testingHomePage-class-skipped">
+          <div class="suite-Regression-1_testingHomePage-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">BranchIO.com.HomePageTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.branchIO.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="HomePage_team">
-                  </a> <!-- HomePage_team -->
-                  <span class="method-name">HomePage_team</span>
-                  <div class="stack-trace">java.io.FileNotFoundException: /Users/manjujain./RestAssured/locator_expectedValue.properties (No such file or directory)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(FileInputStream.java:195)
-	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
-	at BranchIO.com.Base.setupEn(Base.java:29)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="launchHomePage">
-                  </a> <!-- launchHomePage -->
-                  <span class="method-name">launchHomePage</span>
-                  <div class="stack-trace">java.io.FileNotFoundException: /Users/manjujain./RestAssured/locator_expectedValue.properties (No such file or directory)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(FileInputStream.java:195)
-	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
-	at BranchIO.com.Base.setupEn(Base.java:29)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="navigateHomePageWithGoogle">
-                  </a> <!-- navigateHomePageWithGoogle -->
-                  <span class="method-name">navigateHomePageWithGoogle</span>
-                  <div class="stack-trace">java.io.FileNotFoundException: /Users/manjujain./RestAssured/locator_expectedValue.properties (No such file or directory)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(FileInputStream.java:195)
-	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
-	at BranchIO.com.Base.setupEn(Base.java:29)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="openNewtab">
-                  </a> <!-- openNewtab -->
-                  <span class="method-name">openNewtab</span>
-                  <div class="stack-trace">java.io.FileNotFoundException: /Users/manjujain./RestAssured/locator_expectedValue.properties (No such file or directory)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(FileInputStream.java:195)
-	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
-	at BranchIO.com.Base.setupEn(Base.java:29)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="validateNumberOfEmployee">
                   </a> <!-- validateNumberOfEmployee -->
                   <span class="method-name">validateNumberOfEmployee</span>
-                  <div class="stack-trace">java.io.FileNotFoundException: /Users/manjujain./RestAssured/locator_expectedValue.properties (No such file or directory)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(FileInputStream.java:195)
-	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
-	at BranchIO.com.Base.setupEn(Base.java:29)
-... Removed 26 stack frames
+                  <div class="stack-trace">java.lang.AssertionError: expected [124] but found [120]
+	at com.branchIO.HomePageTest.validateNumberOfEmployee(HomePageTest.java:221)
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -223,21 +173,57 @@
                   <a name="varifyEmployeeList">
                   </a> <!-- varifyEmployeeList -->
                   <span class="method-name">varifyEmployeeList</span>
-                  <div class="stack-trace">java.io.FileNotFoundException: /Users/manjujain./RestAssured/locator_expectedValue.properties (No such file or directory)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(FileInputStream.java:195)
-	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
-	at BranchIO.com.Base.setupEn(Base.java:29)
-... Removed 26 stack frames
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.branchIO.HomePageTest.varifyEmployeeList(HomePageTest.java:183)
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression-1_testingHomePage-class-skipped -->
+          </div> <!-- suite-Regression-1_testingHomePage-class-failed -->
+          <div class="suite-Regression-1_testingHomePage-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.branchIO.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomePage_team">
+                  </a> <!-- HomePage_team -->
+                  <span class="method-name">HomePage_team</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchHomePage(https://branch.io/)">
+                  </a> <!-- launchHomePage(https://branch.io/) -->
+                  <span class="method-name">launchHomePage</span>
+                  <span class="parameters">(https://branch.io/)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateHomePageWithGoogle(https://www.google.com/)">
+                  </a> <!-- navigateHomePageWithGoogle(https://www.google.com/) -->
+                  <span class="method-name">navigateHomePageWithGoogle</span>
+                  <span class="parameters">(https://www.google.com/)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openNewtab(https://branch.io/)">
+                  </a> <!-- openNewtab(https://branch.io/) -->
+                  <span class="method-name">openNewtab</span>
+                  <span class="parameters">(https://branch.io/)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-1_testingHomePage-class-passed -->
         </div> <!-- panel Regression-1_testingHomePage -->
         <div panel-name="test-xml-Regression-1_testingHomePage" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/manjujain/Downloads/RestAssured/testng.xml</span>
+            <span class="header-content">/Users/manjujain/GitFolder/BranchioTest/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -249,7 +235,7 @@
     &lt;parameter name=&quot;HOMEPageURL&quot; value=&quot;https://branch.io/&quot;/&gt;
     &lt;parameter name=&quot;Browser&quot; value=&quot;ch&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;BranchIO.com.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.branchIO.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TC004_ch  --&gt;
 &lt;/suite&gt; &lt;!-- Regression-1_testingHomePage --&gt;
@@ -291,34 +277,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'openNewtab')
-data.setCell(0, 2, 'BranchIO.com.HomePageTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'varifyEmployeeList')
+data.setCell(0, 2, 'com.branchIO.HomePageTest')
+data.setCell(0, 3, 11975);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateNumberOfEmployee')
-data.setCell(1, 2, 'BranchIO.com.HomePageTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'HomePage_team')
+data.setCell(1, 2, 'com.branchIO.HomePageTest')
+data.setCell(1, 3, 5555);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'launchHomePage')
-data.setCell(2, 2, 'BranchIO.com.HomePageTest')
-data.setCell(2, 3, 0);
+data.setCell(2, 1, 'navigateHomePageWithGoogle')
+data.setCell(2, 2, 'com.branchIO.HomePageTest')
+data.setCell(2, 3, 4888);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'HomePage_team')
-data.setCell(3, 2, 'BranchIO.com.HomePageTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 1, 'launchHomePage')
+data.setCell(3, 2, 'com.branchIO.HomePageTest')
+data.setCell(3, 3, 1501);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'varifyEmployeeList')
-data.setCell(4, 2, 'BranchIO.com.HomePageTest')
-data.setCell(4, 3, 0);
+data.setCell(4, 1, 'openNewtab')
+data.setCell(4, 2, 'com.branchIO.HomePageTest')
+data.setCell(4, 3, 1348);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'navigateHomePageWithGoogle')
-data.setCell(5, 2, 'BranchIO.com.HomePageTest')
-data.setCell(5, 3, 0);
+data.setCell(5, 1, 'validateNumberOfEmployee')
+data.setCell(5, 2, 'com.branchIO.HomePageTest')
+data.setCell(5, 3, 102);
 window.suiteTableData['Regression-1_testingHomePage']= { tableData: data, tableDiv: 'times-div-Regression-1_testingHomePage'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
               <div id="times-div-Regression-1_testingHomePage">
               </div> <!-- times-div-Regression-1_testingHomePage -->
             </div> <!-- times-div -->
@@ -344,37 +330,47 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">BranchIO.com.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.branchIO.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setupEn</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">launchBrowser(ch)</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">launchHomePage</span>
-                <span class="method-start">-1536911129543 ms</span>
+                <span class="method-name">launchHomePage(https://branch.io/)</span>
+                <span class="method-start">1365 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">HomePage_team</span>
-                <span class="method-start">-1536911129543 ms</span>
+                <span class="method-start">2870 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">varifyEmployeeList</span>
-                <span class="method-start">-1536911129543 ms</span>
+                <span class="method-start">8426 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">validateNumberOfEmployee</span>
-                <span class="method-start">-1536911129543 ms</span>
+                <span class="method-start">20404 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">navigateHomePageWithGoogle</span>
-                <span class="method-start">-1536911129543 ms</span>
+                <span class="method-name">navigateHomePageWithGoogle(https://www.google.com/)</span>
+                <span class="method-start">20508 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">openNewtab</span>
-                <span class="method-start">-1536911129543 ms</span>
+                <span class="method-name">openNewtab(https://branch.io/)</span>
+                <span class="method-start">25397 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">26746 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -7,7 +7,7 @@
 	         <parameter name="HOMEPageURL" value="https://branch.io/" />
 	         <parameter name="GoogleURL" value="https://www.google.com/" />
     <classes>
-       <class name="BranchIO.com.HomePageTest" />
+       <class name="com.branchIO.HomePageTest" />
     </classes>
     
   </test>

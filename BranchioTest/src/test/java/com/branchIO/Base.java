@@ -1,5 +1,5 @@
 
-package BranchIO.com;
+package com.branchIO;
 
 import java.io.File;
 import java.io.FileInputStream;

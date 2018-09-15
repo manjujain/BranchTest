@@ -1,4 +1,4 @@
-package BranchIO.com;
+package com.branchIO;
 
 import java.util.ArrayList;
 import java.util.Iterator;

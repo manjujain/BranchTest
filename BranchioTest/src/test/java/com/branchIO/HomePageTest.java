@@ -1,4 +1,4 @@
-package BranchIO.com;
+package com.branchIO;
 
 
 import org.openqa.selenium.By;
@@ -13,9 +13,9 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import static BranchIO.com.DriverBuilder.getDr;
+import static com.branchIO.DriverBuilder.getDr;
+import static com.branchIO.MethodLibrary.*;
 
-import static BranchIO.com.MethodLibrary.*;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
@@ -60,7 +60,7 @@ public class HomePageTest extends Base{
 	}
 
 	@Test(priority = 2)
-	public void HomePage_team() throws InterruptedException, AWTException {
+	public void HomePage_ScrollDownToTeam() throws InterruptedException, AWTException {
 		System.out.println("pageload");
 		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_PAGE_DOWN);
@@ -242,6 +242,12 @@ public class HomePageTest extends Base{
 		driver.manage().timeouts().implicitlyWait(60L, TimeUnit.SECONDS);
 	}
 
-	
+
+	@AfterClass
+	public  void teardown() throws Exception {
+		driver.quit();
+		
+
+	}
 
 }

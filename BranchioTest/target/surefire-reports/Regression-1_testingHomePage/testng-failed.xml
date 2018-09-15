@@ -13,8 +13,8 @@
         <methods>
           <include name="varifyEmployeeList"/>
           <include name="launchBrowser"/>
-          <include name="teardown"/>
           <include name="validateNumberOfEmployee"/>
+          <include name="teardown"/>
           <include name="setupEn"/>
         </methods>
       </class> <!-- BranchIO.com.HomePageTest -->

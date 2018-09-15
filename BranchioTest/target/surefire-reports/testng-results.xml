@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="2" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression-1_testingHomePage" duration-ms="37075" started-at="2018-09-14T21:41:13Z" finished-at="2018-09-14T21:41:50Z">
+  <suite name="Regression-1_testingHomePage" duration-ms="30307" started-at="2018-09-14T23:47:25Z" finished-at="2018-09-14T23:47:55Z">
     <groups>
     </groups>
-    <test name="TC004_ch " duration-ms="37075" started-at="2018-09-14T21:41:13Z" finished-at="2018-09-14T21:41:50Z">
+    <test name="TC004_ch " duration-ms="30307" started-at="2018-09-14T23:47:25Z" finished-at="2018-09-14T23:47:55Z">
       <class name="BranchIO.com.HomePageTest">
-        <test-method status="PASS" signature="setupEn()[pri:0, instance:BranchIO.com.HomePageTest@7df60067]" name="setupEn" is-config="true" duration-ms="5" started-at="2018-09-14T14:41:13Z" finished-at="2018-09-14T14:41:13Z">
+        <test-method status="PASS" signature="setupEn()[pri:0, instance:BranchIO.com.HomePageTest@415156bf]" name="setupEn" is-config="true" duration-ms="6" started-at="2018-09-14T16:47:25Z" finished-at="2018-09-14T16:47:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupEn -->
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:BranchIO.com.HomePageTest@7df60067]" name="launchBrowser" is-config="true" duration-ms="1676" started-at="2018-09-14T14:41:13Z" finished-at="2018-09-14T14:41:15Z">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:BranchIO.com.HomePageTest@415156bf]" name="launchBrowser" is-config="true" duration-ms="1855" started-at="2018-09-14T16:47:25Z" finished-at="2018-09-14T16:47:27Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="launchHomePage(java.lang.String)[pri:0, instance:BranchIO.com.HomePageTest@7df60067]" name="launchHomePage" duration-ms="1517" started-at="2018-09-14T14:41:15Z" finished-at="2018-09-14T14:41:16Z">
+        <test-method status="PASS" signature="launchHomePage(java.lang.String)[pri:0, instance:BranchIO.com.HomePageTest@415156bf]" name="launchHomePage" duration-ms="1698" started-at="2018-09-14T16:47:27Z" finished-at="2018-09-14T16:47:29Z">
           <params>
             <param index="0">
               <value>
@@ -33,11 +33,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchHomePage -->
-        <test-method status="PASS" signature="HomePage_team()[pri:0, instance:BranchIO.com.HomePageTest@7df60067]" name="HomePage_team" duration-ms="5559" started-at="2018-09-14T14:41:16Z" finished-at="2018-09-14T14:41:22Z">
+        <test-method status="PASS" signature="HomePage_team()[pri:0, instance:BranchIO.com.HomePageTest@415156bf]" name="HomePage_team" duration-ms="5663" started-at="2018-09-14T16:47:29Z" finished-at="2018-09-14T16:47:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePage_team -->
-        <test-method status="FAIL" signature="varifyEmployeeList()[pri:0, instance:BranchIO.com.HomePageTest@7df60067]" name="varifyEmployeeList" duration-ms="13140" started-at="2018-09-14T14:41:22Z" finished-at="2018-09-14T14:41:35Z">
+        <test-method status="FAIL" signature="varifyEmployeeList()[pri:0, instance:BranchIO.com.HomePageTest@415156bf]" name="varifyEmployeeList" duration-ms="13951" started-at="2018-09-14T16:47:34Z" finished-at="2018-09-14T16:47:48Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -112,7 +112,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- varifyEmployeeList -->
-        <test-method status="FAIL" signature="validateNumberOfEmployee()[pri:0, instance:BranchIO.com.HomePageTest@7df60067]" name="validateNumberOfEmployee" duration-ms="114" started-at="2018-09-14T14:41:35Z" finished-at="2018-09-14T14:41:35Z">
+        <test-method status="FAIL" signature="validateNumberOfEmployee()[pri:0, instance:BranchIO.com.HomePageTest@415156bf]" name="validateNumberOfEmployee" duration-ms="135" started-at="2018-09-14T16:47:48Z" finished-at="2018-09-14T16:47:48Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [124] but found [120]]]>
@@ -188,7 +188,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateNumberOfEmployee -->
-        <test-method status="PASS" signature="navigateHomePageWithGoogle(java.lang.String)[pri:0, instance:BranchIO.com.HomePageTest@7df60067]" name="navigateHomePageWithGoogle" duration-ms="13361" started-at="2018-09-14T14:41:35Z" finished-at="2018-09-14T14:41:48Z">
+        <test-method status="PASS" signature="navigateHomePageWithGoogle(java.lang.String)[pri:0, instance:BranchIO.com.HomePageTest@415156bf]" name="navigateHomePageWithGoogle" duration-ms="5120" started-at="2018-09-14T16:47:48Z" finished-at="2018-09-14T16:47:53Z">
           <params>
             <param index="0">
               <value>
@@ -199,7 +199,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateHomePageWithGoogle -->
-        <test-method status="PASS" signature="openNewtab(java.lang.String)[pri:0, instance:BranchIO.com.HomePageTest@7df60067]" name="openNewtab" duration-ms="1081" started-at="2018-09-14T14:41:48Z" finished-at="2018-09-14T14:41:50Z">
+        <test-method status="PASS" signature="openNewtab(java.lang.String)[pri:0, instance:BranchIO.com.HomePageTest@415156bf]" name="openNewtab" duration-ms="1241" started-at="2018-09-14T16:47:53Z" finished-at="2018-09-14T16:47:55Z">
           <params>
             <param index="0">
               <value>
@@ -210,7 +210,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openNewtab -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:BranchIO.com.HomePageTest@7df60067]" name="teardown" is-config="true" duration-ms="602" started-at="2018-09-14T14:41:50Z" finished-at="2018-09-14T14:41:50Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:BranchIO.com.HomePageTest@415156bf]" name="teardown" is-config="true" duration-ms="626" started-at="2018-09-14T16:47:55Z" finished-at="2018-09-14T16:47:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
