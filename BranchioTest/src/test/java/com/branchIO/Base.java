@@ -23,7 +23,7 @@ public class Base {
 
 	public void setupEn() throws Exception {
 
-		String path = System.getProperty("user.home")+"/Downloads/RestAssured/locator_expectedValue.properties";
+		String path = System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchioTest"+File.separator+"locator.properties";
 		File file = new File(path);
 
 		fis = new FileInputStream(file);
