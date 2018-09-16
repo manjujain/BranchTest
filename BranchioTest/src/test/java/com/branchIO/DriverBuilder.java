@@ -17,7 +17,7 @@ public class DriverBuilder {
      static FileInputStream fis;
    
      static String chromeDrPath=System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchTest"+File.separator+"BranchioTest"+File.separator+"src"+File.separator+"test"+File.separator+"java"+File.separator+"resource"+File.separator+"chromedriver";
-	  static String Firefoxdrpath = System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchTest"+File.separator+"BranchioTest"+File.separator+"src"+File.separator+"test"+File.separator+"java"+File.separator+"resource"+File.separator+"gecko.driver";
+	  static String Firefoxdrpath = System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchTest"+File.separator+File.separator+"BranchioTest"+File.separator+"src"+File.separator+"test"+File.separator+"java"+File.separator+"resource"+File.separator+"gecko.driver";
 	  
 	  static String IEdrpath =  System.getProperty("user.home")+"/GitFolder/BranchTestProject/src/resource/iedriver";
 	
