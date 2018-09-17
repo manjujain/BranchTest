@@ -23,7 +23,7 @@ public class Base {
 
 	public void setupEn() throws Exception {
 
-		String path = System.getProperty("user.home")+File.separator+"BranchTest"+File.separator+"GitFolder"+File.separator+"BranchioTest"+File.separator+"locator.properties";
+		String path = System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchTest"+File.separator+"BranchioTest"+File.separator+"locator.properties";
 		File file = new File(path);
 
 		fis = new FileInputStream(file);
