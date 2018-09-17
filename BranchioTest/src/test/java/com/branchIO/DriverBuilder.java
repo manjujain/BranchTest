@@ -13,17 +13,17 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class DriverBuilder {
-	static WebDriver driver;
-     static FileInputStream fis;
+	 WebDriver driver;
+     FileInputStream fis;
    
-     static String chromeDrPath=System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchTest"+File.separator+"BranchioTest"+File.separator+"src"+File.separator+"test"+File.separator+"java"+File.separator+"resource"+File.separator+"chromedriver";
-	  static String Firefoxdrpath = System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchTest"+File.separator+File.separator+"BranchioTest"+File.separator+"src"+File.separator+"test"+File.separator+"java"+File.separator+"resource"+File.separator+"gecko.driver";
+     String chromeDrPath=System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchTest"+File.separator+"BranchioTest"+File.separator+"src"+File.separator+"test"+File.separator+"java"+File.separator+"resource"+File.separator+"chromedriver";
+	 String Firefoxdrpath = System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchTest"+File.separator+File.separator+"BranchioTest"+File.separator+"src"+File.separator+"test"+File.separator+"java"+File.separator+"resource"+File.separator+"gecko.driver";
 	  
-	  static String IEdrpath =  System.getProperty("user.home")+"/GitFolder/BranchTestProject/src/resource/iedriver";
+	  String IEdrpath =  System.getProperty("user.home")+"/GitFolder/BranchTestProject/src/resource/iedriver";
 	
 	
 	  
-	  public static  WebDriver getDr(String Br) {
+	  public  WebDriver getDr(String Br) {
 		String br = Br;
 
 		if (br == "ff") {
@@ -40,6 +40,7 @@ public class DriverBuilder {
 		}
 
 		else if (br == "ch") {
+			
 			File file = new File(chromeDrPath);
 			System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 			

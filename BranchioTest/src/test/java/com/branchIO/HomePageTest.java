@@ -13,7 +13,6 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import static com.branchIO.DriverBuilder.getDr;
 import static com.branchIO.MethodLibrary.*;
 
 import java.awt.AWTException;
@@ -26,12 +25,12 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class HomePageTest extends Base{
-
 	
 
 	JavascriptExecutor js;
 	int TotlaNoOFEmployee = 0;
 	int count = 0;
+	DriverBuilder builder;
 	ArrayList<String> allEmployee;
 	ArrayList<String> Engineer;
 	ArrayList<String> Data ;
@@ -42,9 +41,12 @@ public class HomePageTest extends Base{
 	ArrayList<String> Recruiting ;
 
 	@Parameters({ "Browser" })
+	
 	@BeforeClass
 	public void launchBrowser(String br) {
-		driver = getDr("ch");
+		
+		 builder = new DriverBuilder();
+		driver =builder.getDr("ch");
 		js = (JavascriptExecutor) driver;
 
 	}
