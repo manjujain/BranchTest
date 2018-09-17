@@ -40,11 +40,22 @@ public class DriverBuilder {
 		}
 
 		else if (br == "ch") {
+			String os=System.getProperty("os.name").toLowerCase();
+			if(os.contains("mac")){
 			
 			File file = new File(chromeDrPath);
 			System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 			
 			driver = new ChromeDriver();
+			}
+			else{
+				chromeDrPath=chromeDrPath+".exe";
+				File file = new File(chromeDrPath);
+				System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+				
+				driver = new ChromeDriver();
+			}
+			
 		}
 
 		else {
