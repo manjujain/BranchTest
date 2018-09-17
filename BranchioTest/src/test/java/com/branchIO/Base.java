@@ -19,7 +19,7 @@ public class Base {
 	static Properties prop;
 	static FileInputStream fis;
 
-	@BeforeClass
+	//@BeforeClass
 
 	public void setupEn() throws Exception {
 

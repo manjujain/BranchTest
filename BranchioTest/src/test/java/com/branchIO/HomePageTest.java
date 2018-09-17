@@ -74,7 +74,7 @@ public class HomePageTest extends Base{
 
 		Thread.sleep(5000);
 		
-		driver.findElement(By.xpath(getProp("HomePage_team"))).sendKeys(Keys.ENTER);
+		driver.findElement(By.xpath(".//a[contains(text(),'Team')]")).sendKeys(Keys.ENTER);
 
 	}
 
@@ -83,14 +83,14 @@ public class HomePageTest extends Base{
 		SoftAssert softAssert= new SoftAssert();
 		Thread.sleep(5000);
 
-		allEmployee = new ArrayList<String>();
+		 allEmployee = new ArrayList<String>();
 		 Engineer = new ArrayList<String>();
 		 Data = new ArrayList<String>();
 		 Product = new ArrayList<String>();
 		 PartnerGrowth = new ArrayList<String>();
 		 Marketing = new ArrayList<String>();
-		Operations = new ArrayList<String>();
-		Recruiting = new ArrayList<String>();
+		 Operations = new ArrayList<String>();
+		 Recruiting = new ArrayList<String>();
        
 		// adding all employee in all employee list
 		
@@ -109,10 +109,14 @@ public class HomePageTest extends Base{
 		
 		for (int n = 1; n <= TotlaNoOFEmployee; n++) {
 			
-			 String xpath_employeeName= getProp("Employee_name_xpathPart1")+n+getProp("Employee_name_xpathPart2");
+			 String xpath_employeeName= "html/body/div[1]/div/section[2]/div/div[2]/div/div["+
+					 n
+					+"]/div[2]/div/div[2]/h2";
 					 
 			
-			String xpath_catagary=getProp("Employee_catagory_xpathPart1")+n+getProp("Employee_catagory_xpathPart2");
+			String xpath_catagary="html/body/div[1]/div/section[2]/div/div[2]/div/div["
+					+n
+					+"]/div[2]/div/div[2]/h4";
 			 
 			WebElement ele_name = driver.findElement(By.xpath(xpath_employeeName));
 			
@@ -195,26 +199,27 @@ public class HomePageTest extends Base{
 		// getting list of employee for all department like-data,marketing,Opertion,
 		// Partner Growth, Recruiting
 
-		List<WebElement> DataList = getWebElementList(driver, getProp("HomePage_DataList"));
+		
+		List<WebElement> DataList = getWebElementList(driver, ".//h4[contains(text(),'Data')]");
 
 		count += DataList.size();
 		
-		List<WebElement> EngineerList = getWebElementList(driver, getProp("HomePage_EngineerList"));
+		List<WebElement> EngineerList = getWebElementList(driver, ".//h4[contains(text(),'Engineering')]");
 		count += EngineerList.size();
 		
-		List<WebElement> MarketingList = getWebElementList(driver, getProp("HomePage_MarketingList"));
+		List<WebElement> MarketingList = getWebElementList(driver, ".//h4[contains(text(),'Marketing')]");
 		count += MarketingList.size();
 		
-		List<WebElement> OpertionList = getWebElementList(driver, getProp("HomePage_OpertionList"));
+		List<WebElement> OpertionList = getWebElementList(driver, ".//h4[contains(text(),'Operations')]");
 		count += OpertionList.size();
 		
 		List<WebElement> PartnerGrowthList = getWebElementList(driver,  getProp("HomePage_PartnerGrowthList"));
 		count += PartnerGrowthList.size();
 		
-		List<WebElement> ProductList = getWebElementList(driver, getProp("HomePage_ProductList"));
+		List<WebElement> ProductList = getWebElementList(driver, ".//h4[contains(text(),'Product')]");
 		count += ProductList.size();
 		
-		List<WebElement> RecurtingList = getWebElementList(driver, getProp("HomePage_RecrutingList"));
+		List<WebElement> RecurtingList = getWebElementList(driver, ".//h4[contains(text(),'Recruiting')]");
 		count += RecurtingList.size();
 
 		System.out.println("**************Total count of employee: " + TotlaNoOFEmployee);
