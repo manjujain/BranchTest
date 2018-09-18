@@ -126,10 +126,11 @@ builder = new DriverBuilder();
 			
 			WebElement ele_catagory = driver.findElement(By.xpath(xpath_catagary));
 			
-			
 			String EmployeeName = ele_name.getText();
 			EmployeeName =EmployeeName.toUpperCase();
 			String EmployeeCatagory = ele_catagory.getText();
+					
+					//System.out.println("EmployeeName: "+EmployeeName+ " Category  :"+EmployeeCatagory);
 			
 			
 			if (EmployeeCatagory.equals("Engineering")) {
@@ -170,6 +171,8 @@ builder = new DriverBuilder();
 		Collections.sort(PartnerGrowth);
 		Collections.sort(Marketing);
 		Collections.sort(Operations);
+		
+		
 		System.out.println("Engineer Employee:  *******");
 				
 		
@@ -205,27 +208,34 @@ builder = new DriverBuilder();
 		// Partner Growth, Recruiting
 
 		
-		List<WebElement> DataList = getWebElementList(driver, ".//h4[contains(text(),'Data')]");
-
-		count += DataList.size();
+		count += Data.size();
+		System.out.println(count +"Data==1" );
 		
-		List<WebElement> EngineerList = getWebElementList(driver, ".//h4[contains(text(),'Engineering')]");
-		count += EngineerList.size();
 		
-		List<WebElement> MarketingList = getWebElementList(driver, ".//h4[contains(text(),'Marketing')]");
-		count += MarketingList.size();
+		count += Engineer.size();
 		
-		List<WebElement> OpertionList = getWebElementList(driver, ".//h4[contains(text(),'Operations')]");
-		count += OpertionList.size();
+		System.out.println(count +"==2" );
 		
-		List<WebElement> PartnerGrowthList = getWebElementList(driver,  getProp("HomePage_PartnerGrowthList"));
-		count += PartnerGrowthList.size();
 		
-		List<WebElement> ProductList = getWebElementList(driver, ".//h4[contains(text(),'Product')]");
-		count += ProductList.size();
+		count += Marketing.size();
 		
-		List<WebElement> RecurtingList = getWebElementList(driver, ".//h4[contains(text(),'Recruiting')]");
-		count += RecurtingList.size();
+		System.out.println(count +"==3" );
+		
+		count += Operations.size();
+		
+		System.out.println(count +"===4" );
+		
+		
+		count += PartnerGrowth.size();
+		
+		System.out.println(count +"===5" );
+		
+		
+		count += Product.size();
+		System.out.println(count +"===6" );
+		
+		count += Recruiting.size();
+		System.out.println(count +"===7" );
 
 		System.out.println("**************Total count of employee: " + TotlaNoOFEmployee);
 
