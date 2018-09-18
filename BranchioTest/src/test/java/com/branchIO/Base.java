@@ -13,7 +13,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class Base {
-	  WebDriver driver;
+	 
 
 	JavascriptExecutor js;
 	static Properties prop;
@@ -33,7 +33,7 @@ public class Base {
 	}
 
 	@AfterClass
-	public  void teardown() throws Exception {
+	public  void teardown(WebDriver driver) throws Exception {
 		driver.quit();
 		
 
