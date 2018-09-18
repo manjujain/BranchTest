@@ -13,8 +13,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import static com.branchIO.MethodLibrary.*;
 
+import static com.branchIO.MethodLibrary.*;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
@@ -31,6 +31,7 @@ public class HomePageTest extends Base{
 	int TotlaNoOFEmployee = 0;
 	int count = 0;
 	DriverBuilder builder;
+	WebDriver driver;
 	ArrayList<String> allEmployee;
 	ArrayList<String> Engineer;
 	ArrayList<String> Data ;
@@ -45,7 +46,7 @@ public class HomePageTest extends Base{
 	@BeforeClass
 	public void launchBrowser(String br) {
 		
-		 builder = new DriverBuilder();
+builder = new DriverBuilder();
 		driver =builder.getDr("ch");
 		js = (JavascriptExecutor) driver;
 
@@ -94,7 +95,7 @@ public class HomePageTest extends Base{
        
 		// adding all employee in all employee list
 		
-		List<WebElement> list = driver.findElements(By.className(getProp("AllEmployee_classLoc")));
+		List<WebElement> list = driver.findElements(By.className("jump"));
 		for (int i = 0; i < list.size(); i++) {
 			String name = list.get(i).getAttribute("id");
 			name = name.replaceAll("-", " ");
