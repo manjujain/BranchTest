@@ -18,6 +18,7 @@ import static com.branchIO.MethodLibrary.*;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import java.util.Collections;
@@ -44,7 +45,7 @@ public class HomePageTest extends Base{
 	@Parameters({ "Browser" })
 	
 	@BeforeClass
-	public void launchBrowser(String br) {
+	public void launchBrowser(String br) throws IOException {
 		
 builder = new DriverBuilder();
 		driver =builder.getDr("ch");
