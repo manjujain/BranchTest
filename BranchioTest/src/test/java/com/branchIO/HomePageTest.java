@@ -76,8 +76,10 @@ builder = new DriverBuilder();
 
 		Thread.sleep(5000);
 		
-		driver.findElement(By.xpath(".//a[contains(text(),'Team')]")).sendKeys(Keys.ENTER);
-
+		//driver.findElement(By.xpath(".//a[contains(text(),'Team')]")).sendKeys(Keys.ENTER);
+		 WebElement team=getElement( driver, "xpath", ".//a[contains(text(),'Team')]");
+		 
+		 team.sendKeys(Keys.ENTER);
 	}
 
 	@Test(priority = 3)
@@ -106,7 +108,7 @@ builder = new DriverBuilder();
 		}
 
 		TotlaNoOFEmployee = list.size();
-
+        System.out.println("this is TotalNo of emeployee: "+TotlaNoOFEmployee );
 		// sorting employee according to category 
 		
 		for (int n = 1; n <= TotlaNoOFEmployee; n++) {
@@ -126,6 +128,7 @@ builder = new DriverBuilder();
 			
 			
 			String EmployeeName = ele_name.getText();
+			EmployeeName =EmployeeName.toUpperCase();
 			String EmployeeCatagory = ele_catagory.getText();
 			
 			

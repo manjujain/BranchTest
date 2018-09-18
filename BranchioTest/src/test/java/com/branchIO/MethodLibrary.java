@@ -13,24 +13,34 @@ import org.openqa.selenium.WebElement;
 
 public class MethodLibrary {
 	
-	 
+	// this method will return webelement
+	public static  WebElement 	getElement(WebDriver driver, String locaor, String locatorValue){
+		WebElement element = null;
+		
+		switch(locaor){
+		case "xpath":
+		element =driver.findElement(By.xpath(locatorValue));break;
+		case "className":
+			element =driver.findElement(By.className(locatorValue));break;
+			
+		case "id":
+			element =driver.findElement(By.id(locatorValue));break;
+			
+		case "tag":
+			element =driver.findElement(By.tagName(locatorValue));break;
+		case "CSS":
+			element =driver.findElement(By.cssSelector(locatorValue));break;
+		case "name":		
+			element =driver.findElement(By.name(locatorValue));break;
+			
+		default:
+			System.out.println("locator not found");
+		}
+			
+		return element;
+		
+	}	 
 	
-public static WebElement scrollDownToElement(WebDriver driver, By by){
-	 
-	JavascriptExecutor je = (JavascriptExecutor) driver;
-	 
-	 
-	 
-	//Identify the WebElement which will appear after scrolling down
-	 
-	WebElement element = driver.findElement(by);
-	 
-	je.executeScript("arguments[0].scrollIntoView(true);",element);
-	
-	
-	return element;
-	 	
-}
 
 
 // this method validate list1 has all element of list2
@@ -69,7 +79,22 @@ List<WebElement> list= driver.findElements(By.xpath(xpath));
 	return list;
 	
 }
-
+public static WebElement scrollDownToElement(WebDriver driver, By by){
+	 
+	JavascriptExecutor je = (JavascriptExecutor) driver;
+	 
+	 
+	 
+	//Identify the WebElement which will appear after scrolling down
+	 
+	WebElement element = driver.findElement(by);
+	 
+	je.executeScript("arguments[0].scrollIntoView(true);",element);
+	
+	
+	return element;
+	 	
+}
 // this method will launch URL on new tab
 public  static void OpenNewTab(WebDriver driver,String URL){	
 	Set<String> handles	=driver.getWindowHandles();
