@@ -28,7 +28,7 @@ public class MethodLibrary {
 			
 		case "tag":
 			element =driver.findElement(By.tagName(locatorValue));break;
-		case "CSS":
+		case "css":
 			element =driver.findElement(By.cssSelector(locatorValue));break;
 		case "name":		
 			element =driver.findElement(By.name(locatorValue));break;

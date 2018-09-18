@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 
 public class Base {
 	 
@@ -19,8 +20,8 @@ public class Base {
 	static Properties prop;
 	static FileInputStream fis;
 
-	//@BeforeClass
-
+	@BeforeMethod
+//GitFolder
 	public void setupEn() throws Exception {
 
 		String path = System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchTest"+File.separator+"BranchioTest"+File.separator+"locator.properties";
@@ -32,12 +33,7 @@ public class Base {
 
 	}
 
-	@AfterClass
-	public  void teardown(WebDriver driver) throws Exception {
-		driver.quit();
-		
-
-	}
+	
 
 	public  String getProp(String key) {
 

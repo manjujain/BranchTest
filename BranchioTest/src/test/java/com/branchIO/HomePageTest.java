@@ -15,6 +15,7 @@ import org.testng.asserts.SoftAssert;
 
 
 import static com.branchIO.MethodLibrary.*;
+import static com.branchIO.DriverBuilder.*;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
@@ -27,11 +28,11 @@ import java.util.concurrent.TimeUnit;
 
 public class HomePageTest extends Base{
 	
-
+   
 	JavascriptExecutor js;
 	int TotlaNoOFEmployee = 0;
 	int count = 0;
-	DriverBuilder builder;
+	
 	WebDriver driver;
 	ArrayList<String> allEmployee;
 	ArrayList<String> Engineer;
@@ -41,15 +42,17 @@ public class HomePageTest extends Base{
 	ArrayList<String> Marketing ;
 	ArrayList<String> Operations ;
 	ArrayList<String> Recruiting ;
-
-	@Parameters({ "Browser" })
-	
+	DriverBuilder builder;
+	String locatorValue=null;
+	@Parameters({"Browser"})
 	@BeforeClass
-	public void launchBrowser(String br) throws IOException {
+	public void launchBrowser(String browser) throws IOException {
+		 String br=browser;
 		
-builder = new DriverBuilder();
-		driver =builder.getDr("ch");
-		js = (JavascriptExecutor) driver;
+		builder = new DriverBuilder(br);
+		 
+	driver=	builder.getDr("ch");
+		
 
 	}
 
@@ -76,8 +79,8 @@ builder = new DriverBuilder();
 
 		Thread.sleep(5000);
 		
-		//driver.findElement(By.xpath(".//a[contains(text(),'Team')]")).sendKeys(Keys.ENTER);
-		 WebElement team=getElement( driver, "xpath", ".//a[contains(text(),'Team')]");
+		 locatorValue=getProp("HomePage_team");
+		 WebElement team=getElement( driver, "xpath",locatorValue );
 		 
 		 team.sendKeys(Keys.ENTER);
 	}
@@ -97,8 +100,8 @@ builder = new DriverBuilder();
 		 Recruiting = new ArrayList<String>();
        
 		// adding all employee in all employee list
-		
-		List<WebElement> list = driver.findElements(By.className("jump"));
+		 locatorValue=getProp("AllEmployee_classLoc");
+		List<WebElement> list = driver.findElements(By.className(locatorValue));
 		for (int i = 0; i < list.size(); i++) {
 			String name = list.get(i).getAttribute("id");
 			name = name.replaceAll("-", " ");
@@ -108,9 +111,7 @@ builder = new DriverBuilder();
 		}
 
 		TotlaNoOFEmployee = list.size();
-        System.out.println("this is TotalNo of emeployee: "+TotlaNoOFEmployee );
-		// sorting employee according to category 
-		
+        
 		for (int n = 1; n <= TotlaNoOFEmployee; n++) {
 			
 			 String xpath_employeeName= "html/body/div[1]/div/section[2]/div/div[2]/div/div["+
@@ -130,8 +131,7 @@ builder = new DriverBuilder();
 			EmployeeName =EmployeeName.toUpperCase();
 			String EmployeeCatagory = ele_catagory.getText();
 					
-					//System.out.println("EmployeeName: "+EmployeeName+ " Category  :"+EmployeeCatagory);
-			
+		// sorting employee according to category	
 			
 			if (EmployeeCatagory.equals("Engineering")) {
 				Engineer.add(EmployeeName);
@@ -204,39 +204,25 @@ builder = new DriverBuilder();
 
 	public void validateNumberOfEmployee() {
 		
-		// getting list of employee for all department like-data,marketing,Opertion,
-		// Partner Growth, Recruiting
-
+		//sum all category employee 
 		
 		count += Data.size();
-		System.out.println(count +"Data==1" );
-		
 		
 		count += Engineer.size();
-		
-		System.out.println(count +"==2" );
 		
 		
 		count += Marketing.size();
 		
-		System.out.println(count +"==3" );
 		
 		count += Operations.size();
 		
-		System.out.println(count +"===4" );
-		
-		
 		count += PartnerGrowth.size();
-		
-		System.out.println(count +"===5" );
 		
 		
 		count += Product.size();
-		System.out.println(count +"===6" );
 		
 		count += Recruiting.size();
-		System.out.println(count +"===7" );
-
+		
 		System.out.println("**************Total count of employee: " + TotlaNoOFEmployee);
 
 		System.out.println("**************Totla count of each Department: " + count);
@@ -265,12 +251,10 @@ builder = new DriverBuilder();
 		driver.manage().timeouts().implicitlyWait(60L, TimeUnit.SECONDS);
 	}
 
-
-	@AfterClass
-	public  void teardown() throws Exception {
+@AfterClass
+	public void driverclose(){
 		driver.quit();
-		
-
 	}
 
+	
 }

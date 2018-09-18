@@ -16,15 +16,19 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class DriverBuilder {
 	WebDriver driver;
+	String br;
+	
      //GitFolder
        String chromeDrPath=System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchTest"+File.separator+"BranchioTest"+File.separator+"src"+File.separator+"test"+File.separator+"java"+File.separator+"resource"+File.separator+"chromedriver";
-	   String Firefoxdrpath = System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchTest"+File.separator+File.separator+"BranchioTest"+File.separator+"src"+File.separator+"test"+File.separator+"java"+File.separator+"resource"+File.separator+"gecko.driver";
+	   String Firefoxdrpath = System.getProperty("user.home")+File.separator+"tetGit"+File.separator+"BranchTest"+File.separator+File.separator+"BranchioTest"+File.separator+"src"+File.separator+"test"+File.separator+"java"+File.separator+"resource"+File.separator+"gecko.driver";
 	  
 	    String IEdrpath =  System.getProperty("user.home")+"/GitFolder/BranchTest/BranchioTest/src/test/java/resource/iedriver";
-	
+	public DriverBuilder(String br){
+		this.br= br;
+	}
 	
 	  
-	  public  WebDriver getDr( String br) throws IOException {
+	  public  WebDriver getDr(String br) throws IOException {
 		
 
 		if (br == "ff") {
