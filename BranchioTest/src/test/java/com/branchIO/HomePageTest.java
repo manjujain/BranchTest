@@ -46,14 +46,15 @@ public class HomePageTest extends Base{
 	String locatorValue=null;
 	@Parameters({"Browser"})
 	@BeforeClass
-	public void launchBrowser(String browser) throws IOException {
-		 
+	public void launchBrowser(String br) throws IOException {
+		
+		
 		builder=new DriverBuilder()	;
 	
 	
 	
 	
-     driver=builder.getDr(browser);
+     driver=builder.getDr(br);
 		
 
 	}

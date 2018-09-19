@@ -16,22 +16,20 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class DriverBuilder {
 	WebDriver driver;
-	String br;
+	
 	
      //GitFolder
-       String chromeDrPath=System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchTest"+File.separator+"BranchioTest"+File.separator+"src"+File.separator+"test"+File.separator+"java"+File.separator+"resource"+File.separator+"chromedriver";
-	   String Firefoxdrpath = System.getProperty("user.home")+File.separator+"tetGit"+File.separator+"BranchTest"+File.separator+File.separator+"BranchioTest"+File.separator+"src"+File.separator+"test"+File.separator+"java"+File.separator+"resource"+File.separator+"gecko.driver";
+        String chromeDrPath=System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchTest"+File.separator+"BranchioTest"+File.separator+"src"+File.separator+"test"+File.separator+"java"+File.separator+"resource"+File.separator+"chromedriver";
+	   String Firefoxdrpath = System.getProperty("user.home")+File.separator+"GitFolder"+File.separator+"BranchTest"+File.separator+File.separator+"BranchioTest"+File.separator+"src"+File.separator+"test"+File.separator+"java"+File.separator+"resource"+File.separator+"gecko.driver";
 	  
-	    String IEdrpath =  System.getProperty("user.home")+"/GitFolder/BranchTest/BranchioTest/src/test/java/resource/iedriver";
-	public DriverBuilder(String br){
-		this.br= br;
-	}
+	  String IEdrpath =  System.getProperty("user.home")+"/GitFolder/BranchTest/BranchioTest/src/test/java/resource/iedriver";
 	
-	  
-	  public  WebDriver getDr(String br) throws IOException {
+
+ 
+	  public  WebDriver getDr( String br) throws IOException {
 		
 
-		if (br == "ff") {
+		if (br.equals("ff") ) {
 			String os=System.getProperty("os.name").toLowerCase();
 			if(os.contains("mac")){
 
@@ -50,7 +48,7 @@ public class DriverBuilder {
 		}
 		
 		
-		} else if (br == "ie") {
+		} else if (br.equals("ie")) {
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap = DesiredCapabilities.internetExplorer();
 			cap.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
@@ -59,7 +57,7 @@ public class DriverBuilder {
 			driver = new InternetExplorerDriver();
 		}
 
-		else if (br == "ch") {
+		else if (br.equals("ch")) {
 			String os=System.getProperty("os.name").toLowerCase();
 			if(os.contains("mac")){
 			
