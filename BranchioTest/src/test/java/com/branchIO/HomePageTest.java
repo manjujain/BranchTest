@@ -33,7 +33,7 @@ public class HomePageTest extends Base{
 	int TotlaNoOFEmployee = 0;
 	int count = 0;
 	
-	WebDriver driver;
+	 static WebDriver driver;
 	ArrayList<String> allEmployee;
 	ArrayList<String> Engineer;
 	ArrayList<String> Data ;
@@ -47,11 +47,13 @@ public class HomePageTest extends Base{
 	@Parameters({"Browser"})
 	@BeforeClass
 	public void launchBrowser(String browser) throws IOException {
-		 String br=browser;
-		
-		builder = new DriverBuilder(br);
 		 
-	driver=	builder.getDr("ch");
+		builder=new DriverBuilder()	;
+	
+	
+	
+	
+     driver=builder.getDr(browser);
 		
 
 	}
