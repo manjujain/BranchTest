@@ -44,13 +44,13 @@ public class HomePageTest extends Base{
 	ArrayList<String> Recruiting ;
 	DriverBuilder builder;
 	String locatorValue=null;
+	
 	@Parameters({"Browser"})
 	@BeforeClass
 	public void launchBrowser(String br) throws IOException {
-		
+		 locatorValue=getpropertyValue("HomePage_team");
 		
 		builder=new DriverBuilder()	;
-	
 	
 	
 	
@@ -70,8 +70,9 @@ public class HomePageTest extends Base{
 	}
 
 	@Test(priority = 2)
-	public void HomePage_ScrollDownToTeam() throws InterruptedException, AWTException {
+	public void HomePage_ScrollDownToTeam() throws InterruptedException, AWTException, IOException {
 		System.out.println("pageload");
+		System.setProperty("java.awt.headless", "false");
 		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_PAGE_DOWN);
 
@@ -82,14 +83,16 @@ public class HomePageTest extends Base{
 
 		Thread.sleep(5000);
 		
-		 locatorValue=getProp("HomePage_team");
+		 locatorValue=getpropertyValue("HomePage_team");
+		 
+		 System.out.println("Property file loaded sucessfully========"+locatorValue);
 		 WebElement team=getElement( driver, "xpath",locatorValue );
 		 
 		 team.sendKeys(Keys.ENTER);
 	}
 
 	@Test(priority = 3)
-	public void varifyEmployeeList() throws InterruptedException {
+	public void varifyEmployeeList() throws InterruptedException, IOException {
 		SoftAssert softAssert= new SoftAssert();
 		Thread.sleep(5000);
 
@@ -103,7 +106,9 @@ public class HomePageTest extends Base{
 		 Recruiting = new ArrayList<String>();
        
 		// adding all employee in all employee list
-		 locatorValue=getProp("AllEmployee_classLoc");
+		 locatorValue=getpropertyValue("AllEmployee_classLoc");
+		 
+		 System.out.println("Property file loaded sucessfully 2========"+locatorValue);
 		List<WebElement> list = driver.findElements(By.className(locatorValue));
 		for (int i = 0; i < list.size(); i++) {
 			String name = list.get(i).getAttribute("id");
